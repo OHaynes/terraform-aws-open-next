@@ -694,6 +694,8 @@ EOF
     region               = optional(string)
     name                 = optional(string)
     domain_name          = optional(string)
+    deny_insecure_transport = optional(bool, false)
+    deny_outdated_tls = optional(bool, false)
   })
   default = {}
 }
